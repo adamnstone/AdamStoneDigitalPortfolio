@@ -10,7 +10,7 @@ from datetime import date, timedelta
 import datetime as dt
 
 data_email = "data@charlottelaundry.com"
-data_email_password = "Adamstone00@"
+data_email_password = "XXXXXXXXXX"
 email_host = 'mail.charlottelaundry.com'
 
 # months list used for finding email with correct subject
