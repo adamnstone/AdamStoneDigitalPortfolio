@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "laundrymatautomation",
+  "private_key_id": "793ed6046ab7e80161188748c5c424e750cff111",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFotXulkYaIBe0\n7xqRs2z/GU3s0RMMb1fBPR74HgWvb43izqarJ4wRluk7ztBo7qrPd/2rEOXrsfER\n7oO35azXIscoRlc3qjpYK0AYH1xMeUA87grNRPQ/yU9tlDFrWr400DHD4xO8zmDS\n7IzAl7RoXMax+4+B9wWE6ds1CyMG6FNZzgOT21hDQuhul7o2tOMzKTheuVLdlEA7\nT9lYmBb21HMpyyTZZr6uCbJu1xakUkO46KjXpb9m1yMCsPkGYTlbTNnjehjtaaJ4\n6l46NJZAe8aVa54gN4zPu2cXND846yDTKv76OIf13gifokwS1B53VqwMYKONHXiX\nv9iFyJ4bAgMBAAECggEABcW+njQubPyV+gISfRdIA4q/f2oQi92ZVbq4HlgbeLx3\nNkeB5QrdKPWxmekYUOWeVeaedpzM57Lv+cLv1EhgNtJnDb1Bi+MsHBTQpO5kOZRA\nX5Hg/Tjah3MU9Pw4lfb1tOuFyz+6fQUWx+JX2Wzfkegad5VY44YNrQxQNj7n3Co8\nxUKsghNjsJAf1JVeyPprwAl4c0sh1S5ZJPv1OlkJJo5IPFKBM0F68qubrpZDh+RO\nHZ+ez8L0X+Wq6vRaA4uLWwFo66hUaAl/H1Gcz6eczAdxS5spkhe/UhaIMD66G48V\nY2k2gXIitXvrNWEtgepWuN3bqrauuw2BspP+zs3xoQKBgQD553Jevm0M16B5CLN5\nMQtNwcGkppdqbYqkAZ97iaL+ji75/4oHg6kI1sgeCeiTkn4Cvo6HQYEBr09Awtt5\ngxe5lYPlJ5CTS9qvcUdT2jwDNnx2/R8EkNFh/4+0qbLi4ieJB3XcuBAJryQVL4DO\n8VnTw43GZYj1hy112kM3Zws/ewKBgQDKdP7hvbSsTIU0eu3EX+5zkWIpigxQfWMm\nZpyciTizcgRjtUoHDgKag/kzoTu1Zt1p+oscYu4ignPqGfMadswFIGzMBgmQ/pZZ\nvon91aClodlUfgCzhB9XZI1hDgEUWUeOdPxzU/ijauh9JmN7bJ2JPiCxU+CPAjpb\n2BNB/beJ4QKBgQDp9hFROh6GI2mNZuP/1jaq+Xb9Wynu7dcabJqO4fDDOQIp81+a\nYVzjdZGs7cHcRw3KK/TsFBtfJG2iR8uKG30etifhZgUooZ9/GSKaEnqU13H3RErB\nz4L3qHc1wJpFZ010MJPbrEb3igzR+MMy+yoJ487bqztqAsBA0bKUL9iL+QKBgFFc\nPQW49/957NoPQLf3GVuGJF2vJY2/JfZLrEpX9tpeSpdLRomZPsCboqz18YnP4dDy\nJ69rrmld5XlBnmmXLhwtUKuZDYUgWomMQeYpUJrfdPg4fs2lnfa/6PUE7LghvNjp\n+H3cVAJQN0f8AmSaXKDHv9mjbI3sBknchrixXm3hAoGAJ2cTYQCj1PBRq9Dy6Q6Y\n01gojQyeNH8AlABvt90Hbv+hrWSsjH/KeQAvZN5vTqGkmeBWmdtEspxUfi1VRz56\nqtimpmEtA1Uy/fBjo8hzRJf+pBTZmN0jyNy9LCdwM1t4X20N3IsmwNXVrF8wYpI+\nC389RY6wGQKIWMfvKQciqcM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "laundrymatautomation@laundrymatautomation.iam.gserviceaccount.com",
+  "client_id": "100501672654275314335",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/laundrymatautomation%40laundrymatautomation.iam.gserviceaccount.com"
+}
