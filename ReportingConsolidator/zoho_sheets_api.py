@@ -4,14 +4,14 @@ import requests
 
 class Zoho:
     def __init__(self):
-        self.zoho_client_id = "1000.B37CPDNABB4NLBOP2SQPQHG3CGZ4II"
-        self.zoho_client_secret = "f1ffc2d8c3d09d4673f28b79360c64059d07d18b76"
-        self.resource_id = "7ve7je5f64d242a544fceb7694baff1301ab0"
-        self.oauthtoken = "1000.10ed7d411d5ee5743dcee418128af8f9.c7b2d6dd8b200db06088e0c6a96ff3ce"
+        self.zoho_client_id = "XXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        self.zoho_client_secret = "XXXXXXXXXXXXXXXXXXXXXXXX"
+        self.resource_id = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        self.oauthtoken = "XXXXXXXXXXXXXXXXXXXXXXXXX"
         self.scope = "ZohoSheet.dataAPI.UPDATE,ZohoSheet.dataAPI.READ"
         self.redirect_uri = "https://www.charlottelaundry.com/webmail/"
-        self.code = "1000.7368061e28281405b744cedfcdd31920.2dc280ff5904b5d1841b3fb610c10e59"
-        self.refresh_token_generated_once = "1000.1b0f00123c0550d64bf708c03683c699.69419476798aa92c892203d29bd311ee"
+        self.code = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        self.refresh_token_generated_once = "XXXXXXXXXXXXXXXXXXXXXXXXX"
         self.base_url = f"https://sheet.zoho.com/api/v2/{self.resource_id}"
 
         self.date_title = "Date"
