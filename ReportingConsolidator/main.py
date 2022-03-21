@@ -341,9 +341,9 @@ def main_func():
                                     text=format_all_data(all_data),
                                     subject=final_email_subject,
                                     from_email=f"Adam Stone Analytical Services <{data_email}>",
-                                    to_emails=["dan@charlottelaundry.com",
-                                               "hardik.shah@charlottelaundry.com",
-                                               "paul@charlottelaundry.com"],
+                                    to_emails=["XXXXXXXX@XXXXXX.com", # to emails
+                                               "XXXXXXXX@XXXXXX.com",
+                                               "XXXXXXXX@XXXXXX.com"],
                                     port=2525,
                                     host=email_host)
             print("Email Sent")
@@ -366,9 +366,9 @@ def main_func():
                                 text=f"An Error Occurred:\n\n{error_string}",
                                 subject="An Error Occurred",
                                 from_email=f"Adam Stone Analytical Services <{data_email}>",
-                                to_emails=["dan@charlottelaundry.com",
-                                           "hardik.shah@charlottelaundry.com",
-                                           "paul@charlottelaundry.com"],
+                                to_emails=["XXXXXXXX@XXXXXX.com", # to emails
+                                           "XXXXXXXX@XXXXXX.com",
+                                           "XXXXXXXX@XXXXXX.com"],
                                 port=2525,
                                 host=email_host)
 
