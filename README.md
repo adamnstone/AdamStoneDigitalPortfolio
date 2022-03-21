@@ -32,3 +32,7 @@ During COVID, we have all been bored out of our minds on Zoom meetings. Luckily,
 # 7] SudokuSolver
 
 My grandmother loves to play sudoku, but I though I could do better! I programmed a SudokuSolver in C# that uses recursion and backtracing to find the solution to the puzzle. To enter the puzzle, type each line of the sudoku puzzle into the command line with "X" wherever there is an unknown number. Then it will print out the solution.
+
+# 8] GoogleMeetAutomation
+
+I was fully virtual during my 8th grade year of school because of COVID. Because I didn't want to be late to my classes, I created a Python3 program using the library PyAutoGUI that automatically opens google chrome whenever it is time for class, types in the URL for Google Meet, enters the class code based on the time of day it is, and logs onto the meeting.
