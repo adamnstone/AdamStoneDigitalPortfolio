@@ -3,7 +3,7 @@ This is Adam Stone's computer programming portfolio of my favorite projects that
 
 # 1] ReportingConsolidator
 
-A laundromat chain wanted to automate data collection and dispersal about sales and other statistics in their stores. Several emails would come through with different statistics, and an employees would sift through the data, transfer select pieces of information into ZohoSheets, and send a summary email to the owners. This program also generates graphs that help analyze customer trends. Using Python 3, I created a program that automates all of these processes, and it is still running to help this business. (I have also changed all sensititve information into either environment variables or "XXXXXX" in the code for security purposes).
+A laundromat chain wanted to automate data collection and dispersal about sales and other statistics in their stores. Several emails would come through with different statistics in varying formats (from HTML to plan text to .rtf files, etc.), and employees would sift through the data, transfer select pieces of information into ZohoSheets, and send a summary email to the owners. This program also generates graphs that help analyze customer trends. Using Python 3, I created a program that automates all of these processes, and it is still running to help this business. (I have also changed all sensititve information into either environment variables or "XXXXXX" in the code for security purposes).
 
 # 2] ChessAI
 
@@ -25,14 +25,18 @@ I am always worried that my two younger brothers will come across inappropriate 
 In debate, there is a "wiki" page where students somtimes upload their arguments. I wanted to find the most efficient way of collecting evidence, so I created a program that scans the "wiki" for all pieces of evidence that debaters use in their cases, creates a database storing all of this information, and hosts a search-engine website where you can search keywords and it will bring up all evidence related to your search. You can then download this evidence as a word file or preview it in the browser. Also, all users are required to sign up for an account using their emails. This way, the search engine can be sold as a service for profit. Additionally, I implemented different password-authentication and reset features that can be seen in the code. I used HTML, JS, and CSS for the frotend, and a Python3 backend using the Flask framework. 
 When you first run this file, it will start downloading cases from the "wiki." I have configured it so that it will stop after a couple of documents, because it would take years to download everything from the "wiki."
 
-# 6] ZoomFaker
+# 6] WordleWebsiteGenerator
+
+With the massive success of the recent Wordle trend, I decided to program my own version of Wordle. Unfortunately, created one Wordle game alone is time consuming, so if I wanted to make multiple versions, it would be unmanagable. Thankfully, I made a program that lets you specify the number of letters and word bank, and it will generate a Python3 Flask app with HTML, JS, and CSS frontend. To use this program, import the "generate_wordle()" function from the module generate_wordle.py, and call the function with the specified parameters. Doing so will create a new directory with a full-fledged Flask application. Then, run the "main.py" file from inside this newly-created directory and type the URL that it logs into a search engine. This directory can also be put on a web server and the website can be accessed from any computer or network.
+
+# 7] ZoomFaker
 
 During COVID, we have all been bored out of our minds on Zoom meetings. Luckily, I created ZoomFaker, a program that lets you display a fake, looping video of yourself instead of your live camera feed on a Zoom meeting. For this program to run, you also need to install OBS studio. To use this program, you have to start running the Python 3 file (or compiled EXE). Then, open a Zoom meeting. Briefly turn off your video. Click the "b" key on your keyboard to begin recording yourself, and select the "OBS virtual camera" video input device. This lets you turn your camera on while recording. When you are done recording yourself, click "s" and the recording will automatically start playing instead of your camera feed. If you need to switch back (for example, if someone asks you a question on the meeting), you can simply change your video input device back to your computer's camera, then go back to the virtual camera to continue the recording. Also, clicking "f" toggles the flip-recording setting. If this setting is on, the video you recorded will play forward then backwards seamlessly, so that there is no cut when the recording ends. Lastly, pressing "p" starts the recording over from the beginning, and "r" deletes the current recording. (Also this projcet is not limited to Zoom - it will function on all virtual meeting platforms where you can change your video input source).
 
-# 7] SudokuSolver
+# 8] SudokuSolver
 
 My grandmother loves to play sudoku, but I though I could do better! I programmed a SudokuSolver in C# that uses recursion and backtracing to find the solution to the puzzle. To enter the puzzle, type each line of the sudoku puzzle into the command line with "X" wherever there is an unknown number. Then it will print out the solution.
 
-# 8] GoogleMeetAutomation
+# 9] GoogleMeetAutomation
 
 I was fully virtual during my 8th grade year of school because of COVID. Because I didn't want to be late to my classes, I created a Python3 program using the library PyAutoGUI that automatically opens google chrome whenever it is time for class, types in the URL for Google Meet, enters the class code based on the time of day it is, and logs onto the meeting.
