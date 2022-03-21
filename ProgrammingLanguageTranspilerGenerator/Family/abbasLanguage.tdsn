@@ -1,0 +1,12 @@
+IDoNotUnderstand
+
+BEFORE: "doodle" "schmooble"
+AFTER: "cout <<" ";"
+
+USE DOUBLE QUOTES: YES
+USE SINGLE QUOTES: NO
+
+SETUP CODE: "#include<iostream>\n#include<string>\nusing namespace std;int main(){"
+CLEANUP CODE: ";return 0;}"
+
+RUN COMMAND: "g++ FILE -o testing"

@@ -1,0 +1,14 @@
+Emojicode++
+
+BEFORE: "\🧵" "\👀" "\🔤" "\👉" "\👈" "\⏩" "\🤞" " " "\n" "\🔧" "\⚙" "\🏁" "\🛑" "\🚪" "\🙅" "\🚫" "\⭕" "\💬" "\➖" "\🔴" "\➕" "\✖️" "\➗" "\🤙" "\🤘" "\👍\👎" "\👄" "\🤜" "\👇" "\😀" "\💯" "\🚦" "\🔁" "\🔃" "\🤷" "\🧺"
+AFTER: "string" "#include" "char" ">" "<" "->" "," " " "\n" "(" ")" "{" "}" "[" "]" "!" "." "\"" "-" ";" "+" "*" "/" "&" "=" "bool" "'" ":" "using" "namespace" "%" "do" "for" "while" "try" "catch"
+
+IGNORE UNRECOGNIZED STATEMENTS: YES
+
+USE DOUBLE QUOTES: NO
+USE SINGLE QUOTES: NO
+
+SETUP CODE: ""
+CLEANUP CODE: ""
+
+RUN COMMAND: "g++ FILE -o testing"

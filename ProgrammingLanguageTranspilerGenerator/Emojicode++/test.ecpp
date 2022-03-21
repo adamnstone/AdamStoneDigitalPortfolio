@@ -1,0 +1,281 @@
+👀 👈iostream👉
+👀 👈fstream👉
+👀 👈🧵👉
+👀 👈vector👉
+👀 👈stdlib⭕h👉
+👇 😀 std🔴
+
+const 🧵 transpilerCppText 🤘 💬👀 👈iostream👉\n👀 👈fstream👉\n👀 👈🧵👉\n👀 👈vector👉\n👀 👈map👉\n👀 👈stdio⭕h👉\n👀 \💬Transpiler⭕h\💬\n👇 😀 std🔴\n\nTranspiler🤜🤜Transpiler🔧vector👈🧵👉 toConvert🤞 vector👈🧵👉 converted🤞 👍👎 ignoreUnrecognizedStatements🤞 🧵 joinStatements🤞 👍👎 ignoreInDoubleQuotes🤞 👍👎 ignoreInSingleQuotes⚙ 🏁\n    if 🔧toConvert⭕size🔧⚙ 🚫🤘 converted⭕size🔧⚙⚙ 🏁\n        cout 👈👈 \💬Error🤜 vector👈🧵👉 👄toConvert👄 and vector👈🧵👉 👄converted👄 not the same length\💬 👈👈 endl🔴\n        throw exception🔧⚙🔴\n    🛑\n    ignoreUnrecognized 🤘 ignoreUnrecognizedStatements🔴\n    joinStatements 🤘 joinStatements🔴\n    ignoreDoubleQuotes 🤘 ignoreInDoubleQuotes🔴\n    ignoreSingleQuotes 🤘 ignoreInSingleQuotes🔴\n    setToConvert🔧toConvert⚙🔴\n    setConverted🔧converted⚙🔴\n🛑🔴\n\nvoid Transpiler🤜🤜setToConvert🔧vector👈🧵👉 items⚙ 🏁\n    toConvert 🤘 items🔴\n🛑🔴\n\nvoid Transpiler🤜🤜setConverted🔧vector👈🧵👉 items⚙ 🏁\n    converted 🤘 items🔴\n🛑🔴\n\n🧵 Transpiler🤜🤜join🔧vector👈🧵👉 arr🤞 🧵 joiner⚙ 🏁\n    🧵 fin 🤘 \💬\💬🔴\n    🔁 🔧int i 🤘 0🔴 i 👈 arr⭕size🔧⚙🔴 ➕➕i⚙ 🏁\n        fin ➕🤘 arr🚪i🙅🔴\n        if 🔧i 🚫🤘 arr⭕size🔧⚙ ➖ 1⚙ 🏁\n            fin ➕🤘 joiner🔴\n        🛑\n    🛑\n    return fin🔴\n🛑\n\n🧵 Transpiler🤜🤜transpileTo🔧🧵 input⚙ 🏁\n    vector👈🧵👉 output🔴\n    👍👎 inDoubleQuotes 🤘 false🔴\n    👍👎 inSingleQuotes 🤘 false🔴\n    🔁 🔧int i 🤘 0🔴 i 👈 input⭕length🔧⚙🔴 ➕➕i⚙ 🏁\n        👍👎 found 🤘 false🔴\n        👍👎 prevIsSlash 🤘 false🔴\n        if 🔧i 🚫🤘 0⚙ 🏁\n            prevIsSlash 🤘 input🚪i➖1🙅 🤘🤘 👄\\\\👄🔴\n        🛑\n        if 🔧🚫prevIsSlash⚙ 🏁\n            if 🔧input🚪i🙅 🤘🤘 👄\💬👄 🤙🤙 ignoreDoubleQuotes 🤙🤙 🚫inSingleQuotes⚙ 🏁\n                inDoubleQuotes 🤘 🚫inDoubleQuotes🔴\n                🔁 🔧int j 🤘 0🔴 j 👈 toConvert⭕size🔧⚙🔴 ➕➕j⚙ 🏁\n                    if 🔧toConvert🚪j🙅 🤘🤘 \💬\\\💬\💬⚙ 🏁\n                        output⭕push_back🔧converted🚪j🙅⚙🔴\n                    🛑\n                🛑\n            🛑\n            if 🔧input🚪i🙅 🤘🤘 👄\\👄👄 🤙🤙 ignoreSingleQuotes 🤙🤙 🚫inDoubleQuotes⚙ 🏁\n                inSingleQuotes 🤘 🚫inSingleQuotes🔴\n                🔁 🔧int j 🤘 0🔴 j 👈 toConvert⭕size🔧⚙🔴 ➕➕j⚙ 🏁\n                    if 🔧toConvert🚪j🙅 🤘🤘 \💬👄\💬⚙ 🏁\n                        output⭕push_back🔧converted🚪j🙅⚙🔴\n                    🛑\n                🛑\n            🛑\n        🛑\n        if 🔧🚫inDoubleQuotes 🤙🤙 🚫inSingleQuotes⚙ 🏁\n            int longestIndex 🤘 ➖1🔴\n            int longestLength 🤘 0🔴\n            🔁 🔧int j 🤘 0🔴 j 👈 toConvert⭕size🔧⚙🔴 ➕➕j⚙ 🏁\n                if 🔧toConvert🚪j🙅 🤘🤘 input⭕substr🔧i🤞 toConvert🚪j🙅⭕length🔧⚙⚙⚙ 🏁\n                    if 🔧toConvert🚪j🙅⭕length🔧⚙ 👉 longestLength⚙ 🏁\n                        longestLength 🤘 toConvert🚪j🙅⭕length🔧⚙🔴\n                        longestIndex 🤘 j🔴\n                    🛑\n                🛑\n            🛑\n            if 🔧longestIndex 🚫🤘 ➖1⚙ 🏁\n                output⭕push_back🔧converted🚪longestIndex🙅⚙🔴\n                found 🤘 true🔴\n                i ➕🤘 toConvert🚪longestIndex🙅⭕length🔧⚙➖1🔴\n            🛑\n        🛑\n        else 🏁\n            output⭕push_back🔧🧵🔧1🤞 input🚪i🙅⚙⚙🔴\n        🛑\n        if 🔧🚫inDoubleQuotes 🤙🤙 🚫inSingleQuotes⚙ 🏁\n            if 🔧🚫found 🤙🤙 🚫ignoreUnrecognized⚙ 🏁\n                cout 👈👈 ignoreUnrecognized 👈👈 endl🔴\n                🧵 error 🤘 \💬Error🤜 Statement Not Found at Index \💬🔴\n                error ➕🤘 to_🧵🔧i⚙🔴\n                throw exception🔧⚙🔴\n            🛑\n            else if 🔧🚫found⚙ 🏁\n                output⭕push_back🔧🧵🔧1🤞 input🚪i🙅⚙⚙🔴\n            🛑\n        🛑\n    🛑\n    return join🔧output🤞 joinStatements⚙🔴\n🛑\n\n🧵 Transpiler🤜🤜transpileFrom🔧🧵 input⚙ 🏁\n    vector👈🧵👉 output🔴\n    👍👎 inDoubleQuotes 🤘 false🔴\n    👍👎 inSingleQuotes 🤘 false🔴\n    🔁 🔧int i 🤘 0🔴 i 👈 input⭕length🔧⚙🔴 ➕➕i⚙ 🏁\n        👍👎 found 🤘 false🔴\n        👍👎 prevIsSlash 🤘 false🔴\n        if 🔧i 🚫🤘 0⚙ 🏁\n            prevIsSlash 🤘 input🚪i➖1🙅 🤘🤘 👄\\\\👄🔴\n        🛑\n        if 🔧🚫prevIsSlash⚙ 🏁\n            if 🔧input🚪i🙅 🤘🤘 👄\💬👄 🤙🤙 ignoreDoubleQuotes 🤙🤙 🚫inSingleQuotes⚙ 🏁\n                inDoubleQuotes 🤘 🚫inDoubleQuotes🔴\n                🔁 🔧int j 🤘 0🔴 j 👈 converted⭕size🔧⚙🔴 ➕➕j⚙ 🏁\n                    if 🔧converted🚪j🙅 🤘🤘 \💬\\\💬\💬⚙ 🏁\n                        output⭕push_back🔧toConvert🚪j🙅⚙🔴\n                    🛑\n                🛑\n            🛑\n            if 🔧input🚪i🙅 🤘🤘 👄\\👄👄 🤙🤙 ignoreSingleQuotes 🤙🤙 🚫inDoubleQuotes⚙ 🏁\n                inSingleQuotes 🤘 🚫inSingleQuotes🔴\n                🔁 🔧int j 🤘 0🔴 j 👈 converted⭕size🔧⚙🔴 ➕➕j⚙ 🏁\n                    if 🔧converted🚪j🙅 🤘🤘 \💬👄\💬⚙ 🏁\n                        output⭕push_back🔧toConvert🚪j🙅⚙🔴\n                    🛑\n                🛑\n            🛑\n        🛑\n        if 🔧🚫inDoubleQuotes 🤙🤙 🚫inSingleQuotes⚙ 🏁\n            int longestIndex 🤘 ➖1🔴\n            int longestLength 🤘 0🔴\n            🔁 🔧int j 🤘 0🔴 j 👈 converted⭕size🔧⚙🔴 ➕➕j⚙ 🏁\n                if 🔧converted🚪j🙅 🤘🤘 input⭕substr🔧i🤞 converted🚪j🙅⭕length🔧⚙⚙⚙ 🏁\n                    if 🔧converted🚪j🙅⭕length🔧⚙ 👉 longestLength⚙ 🏁\n                        longestLength 🤘 converted🚪j🙅⭕length🔧⚙🔴\n                        longestIndex 🤘 j🔴\n                    🛑\n                🛑\n            🛑\n            if 🔧longestIndex 🚫🤘 ➖1⚙ 🏁\n                output⭕push_back🔧toConvert🚪longestIndex🙅⚙🔴\n                found 🤘 true🔴\n                i ➕🤘 converted🚪longestIndex🙅⭕length🔧⚙➖1🔴\n            🛑\n        🛑\n        else 🏁\n            output⭕push_back🔧🧵🔧1🤞 input🚪i🙅⚙⚙🔴\n        🛑\n        if 🔧🚫inDoubleQuotes 🤙🤙 🚫inSingleQuotes⚙ 🏁\n            if 🔧🚫found 🤙🤙 🚫ignoreUnrecognized⚙ 🏁\n                cout 👈👈 ignoreUnrecognized 👈👈 endl🔴\n                🧵 error 🤘 \💬Error🤜 Statement Not Found at Index \💬🔴\n                error ➕🤘 to_🧵🔧i⚙🔴\n                throw exception🔧⚙🔴\n            🛑\n            else if 🔧🚫found⚙ 🏁\n                output⭕push_back🔧🧵🔧1🤞 input🚪i🙅⚙⚙🔴\n            🛑\n        🛑\n    🛑\n    return join🔧output🤞 joinStatements⚙🔴\n🛑\n\n🧵 Transpiler🤜🤜transpileToFromFile🔧🧵 inputFile⚙ 🏁\n    🧵 line🔴\n    🧵 allContent 🤘 \💬\💬🔴\n    ifstream file 🔧inputFile⚙🔴\n    if 🔧🚫file⭕is_open🔧⚙⚙ 🏁\n        cout 👈👈 \💬Unable to open file\💬 👈👈 endl🔴\n        throw exception🔧⚙🔴\n    🛑\n    🔃 🔧getline🔧file🤞 line⚙⚙ 🏁\n        allContent ➕🤘 line ➕ 👄\\n👄🔴\n    🛑\n    file⭕close🔧⚙🔴\n    allContent⭕erase🔧prev🔧allContent⭕end🔧⚙⚙⚙🔴\n\n    return transpileTo🔧allContent⚙🔴\n🛑🔴\n\n🧵 Transpiler🤜🤜transpileFromFromFile🔧🧵 inputFile⚙ 🏁\n    🧵 line🔴\n    🧵 allContent 🤘 \💬\💬🔴\n    ifstream file 🔧inputFile⚙🔴\n    if 🔧🚫file⭕is_open🔧⚙⚙ 🏁\n        cout 👈👈 \💬Unable to open file\💬 👈👈 endl🔴\n        throw exception🔧⚙🔴\n    🛑\n    🔃 🔧getline🔧file🤞 line⚙⚙ 🏁\n        allContent ➕🤘 line ➕ 👄\\n👄🔴\n    🛑\n    file⭕close🔧⚙🔴\n    allContent⭕erase🔧prev🔧allContent⭕end🔧⚙⚙⚙🔴\n\n    return transpileFrom🔧allContent⚙🔴\n🛑🔴💬🔴
+const 🧵 transpilerHeaderText 🤘 💬👀 👈iostream👉\n👀 👈fstream👉\n👀 👈🧵👉\n👀 👈vector👉\n👀 👈map👉\n👀 👈stdio⭕h👉\n👇 😀 std🔴\n\nclass Transpiler 🏁\n    vector👈🧵👉 toConvert🔴\n    vector👈🧵👉 converted🔴\n    👍👎 ignoreUnrecognized🔴\n    🧵 joinStatements🔴\n    👍👎 ignoreDoubleQuotes🔴\n    👍👎 ignoreSingleQuotes🔴\n    void setToConvert🔧vector👈🧵👉⚙🔴\n    void setConverted🔧vector👈🧵👉⚙🔴\n    🧵 join🔧vector👈🧵👉🤞 🧵⚙🔴\npublic🤜\n    Transpiler🔧vector👈🧵👉🤞 vector👈🧵👉🤞 👍👎🤞 🧵🤞 👍👎🤞 👍👎⚙🔴\n    🧵 transpileTo🔧🧵⚙🔴\n    🧵 transpileFrom🔧🧵⚙🔴\n    🧵 transpileToFromFile🔧🧵⚙🔴\n    🧵 transpileFromFromFile🔧🧵⚙🔴\n🛑🔴💬🔴
+
+👍👎 fileExists🔧const 🔤 ✖️fileName⚙
+🏁
+    ifstream infile🔧fileName⚙🔴
+    return infile⭕good🔧⚙🔴
+🛑
+
+🧵 getTemporaryFile🔧⚙ 🏁
+    🧵 name 🤘 💬a💬🔴
+    🔃 🔧fileExists🔧🤙🔧name ➕ 💬⭕cpp💬⚙🚪0🙅⚙⚙ 🏁
+        name ➕🤘 💬a💬🔴
+    🛑
+    return name ➕ 💬⭕cpp💬🔴
+🛑
+
+vector👈🧵👉 getStatements🔧🧵 str⚙ 🏁
+    vector👈🧵👉 statements🔴
+    🧵 current 🤘 💬💬🔴
+    👍👎 isInQuotes 🤘 false🔴
+    🔁 🔧int i 🤘 0🔴 i 👈 str⭕length🔧⚙🔴 ➕➕i⚙ 🏁
+        👍👎 prevIsSlash 🤘 false🔴
+        if 🔧i 🚫🤘 0⚙ 🏁
+            prevIsSlash 🤘 str🚪i ➖ 1🙅 🤘🤘 👄\\👄🔴
+        🛑
+        if 🔧str🚪i🙅 🤘🤘 👄💬👄 🤙🤙 🚫prevIsSlash⚙ 🏁
+            isInQuotes 🤘 🚫isInQuotes🔴
+            i ➕🤘 1🔴
+            if 🔧🚫isInQuotes⚙ 🏁
+                statements⭕push_back🔧current⚙🔴
+                current 🤘 💬💬🔴
+            🛑
+        🛑
+        if 🔧isInQuotes⚙ 🏁
+            current ➕🤘 🧵🔧1🤞 str🚪i🙅⚙🔴
+        🛑
+    🛑
+    return statements🔴
+🛑
+
+int main🔧int argc🤞 🔤✖️✖️ argv⚙ 🏁
+    if 🔧argc 👈 2⚙ 🏁
+        cout 👈👈 💬Error🤜 Please Provide a ⭕tdsn File💬 👈👈 endl🔴
+        throw exception🔧⚙🔴
+    🛑
+
+    🧵 designFile 🤘 argv🚪1🙅🔴
+
+    🧵 line🔴
+    vector👈🧵👉 lines🔴
+    ifstream file 🔧designFile⚙🔴
+    🧵 title🔴
+    👍👎 createdTitle 🤘 false🔴
+    if 🔧🚫file⭕is_open🔧⚙⚙ 🏁
+        cout 👈👈 💬Unable to open file💬 👈👈 endl🔴
+        throw exception🔧⚙🔴
+    🛑
+    🔃 🔧getline🔧file🤞 line⚙⚙ 🏁
+        if 🔧🚫createdTitle⚙ 🏁
+            title 🤘 line🔴
+            createdTitle 🤘 true🔴
+        🛑
+        else 🏁
+            lines⭕push_back🔧line⚙🔴
+        🛑
+    🛑
+    file⭕close🔧⚙🔴
+
+    cout 👈👈 💬Creating \💬💬 👈👈 title 👈👈 💬\💬💬 👈👈 endl 👈👈 endl🔴
+
+    🧵 be🔁e🔴
+    🧵 after🔴
+    👍👎 useSingleQuotes 🤘 false🔴
+    👍👎 useDoubleQuotes 🤘 false🔴
+    👍👎 hasRunCommand 🤘 false🔴
+    🧵 runCommand🔴
+    🧵 setupCode 🤘 💬💬🔴
+    🧵 cleanupCode 🤘 💬💬🔴
+    👍👎 ignoreUnrecognized 🤘 true🔴
+    🔁 🔧int i 🤘 0🔴 i 👈 lines⭕size🔧⚙🔴 ➕➕i⚙ 🏁
+        🔁 🔧int j 🤘 0🔴 j 👈 lines🚪i🙅⭕length🔧⚙🔴 ➕➕j⚙ 🏁
+            if 🔧lines🚪i🙅⭕substr🔧j🤞 6⚙ 🤘🤘 💬BEFORE💬⚙ 🏁
+                be🔁e 🤘 lines🚪i🙅⭕substr🔧j➕6🤞 lines🚪i🙅⭕length🔧⚙➖🔧j➕6⚙⚙🔴
+                break🔴
+            🛑
+            else if 🔧lines🚪i🙅⭕substr🔧j🤞 5⚙ 🤘🤘 💬AFTER💬⚙ 🏁
+                after 🤘 lines🚪i🙅⭕substr🔧j➕5🤞 lines🚪i🙅⭕length🔧⚙➖🔧j➕5⚙⚙🔴
+                break🔴
+            🛑
+            else if 🔧lines🚪i🙅⭕substr🔧j🤞 17⚙ 🤘🤘 💬USE SINGLE QUOTES💬⚙ 🏁
+                🧵 sub 🤘 lines🚪i🙅⭕substr🔧j➕17🤞 lines🚪i🙅⭕length🔧⚙➖🔧j➕17⚙⚙🔴
+                useSingleQuotes 🤘 sub⭕find🔧💬YES💬⚙ 🚫🤘 🧵🤜🤜npos🔴
+                break🔴
+            🛑
+            else if 🔧lines🚪i🙅⭕substr🔧j🤞 17⚙ 🤘🤘 💬USE DOUBLE QUOTES💬⚙ 🏁
+                🧵 sub 🤘 lines🚪i🙅⭕substr🔧j➕17🤞 lines🚪i🙅⭕length🔧⚙➖🔧j➕17⚙⚙🔴
+                useDoubleQuotes 🤘 sub⭕find🔧💬YES💬⚙ 🚫🤘 🧵🤜🤜npos🔴
+                break🔴
+            🛑
+            else if 🔧lines🚪i🙅⭕substr🔧j🤞 31⚙ 🤘🤘 💬IGNORE UNRECOGNIZED STATEMENTS💬⚙ 🏁
+                🧵 sub 🤘 lines🚪i🙅⭕substr🔧j➕31🤞 lines🚪i🙅⭕length🔧⚙➖🔧j➕31⚙⚙🔴
+                ignoreUnrecognized 🤘 sub⭕find🔧💬YES💬⚙ 🚫🤘 🧵🤜🤜npos🔴
+                break🔴
+            🛑
+            else if 🔧lines🚪i🙅⭕substr🔧j🤞 11⚙ 🤘🤘 💬RUN COMMAND💬⚙ 🏁
+                🧵 sub 🤘 lines🚪i🙅⭕substr🔧j➕11🤞 lines🚪i🙅⭕length🔧⚙➖🔧j➕11⚙⚙🔴
+                🔁 🔧int k 🤘 0🔴 k 👈 sub⭕length🔧⚙🔴 ➕➕k⚙ 🏁
+                    if 🔧sub🚪k🙅 🤘🤘 👄💬👄⚙ 🏁
+                        🔁 🔧int l 🤘 k ➕ 1🔴 l 👈 sub⭕length🔧⚙🔴 ➕➕l⚙ 🏁
+                            if 🔧sub🚪l➖1🙅 🚫🤘 👄\\👄 🤙🤙 sub🚪l🙅 🤘🤘 👄💬👄⚙ 🏁
+                                hasRunCommand 🤘 true🔴
+                                runCommand 🤘 sub⭕substr🔧k ➕ 1🤞 l➖🔧k➕1⚙⚙🔴
+                                break🔴
+                            🛑
+                        🛑
+                    🛑
+                🛑
+                break🔴
+            🛑
+            else if 🔧lines🚪i🙅⭕substr🔧j🤞 10⚙ 🤘🤘 💬SETUP CODE💬⚙ 🏁
+                🧵 sub 🤘 lines🚪i🙅⭕substr🔧j➕10🤞 lines🚪i🙅⭕length🔧⚙➖🔧j➕10⚙⚙🔴
+                🔁 🔧int k 🤘 0🔴 k 👈 sub⭕length🔧⚙🔴 ➕➕k⚙ 🏁
+                    if 🔧sub🚪k🙅 🤘🤘 👄💬👄⚙ 🏁
+                        🔁 🔧int l 🤘 k ➕ 1🔴 l 👈 sub⭕length🔧⚙🔴 ➕➕l⚙ 🏁
+                            if 🔧sub🚪l➖1🙅 🚫🤘 👄\\👄 🤙🤙 sub🚪l🙅 🤘🤘 👄💬👄⚙ 🏁
+                                setupCode 🤘 sub⭕substr🔧k ➕ 1🤞 l➖🔧k➕1⚙⚙🔴
+                                break🔴
+                            🛑
+                        🛑
+                    🛑
+                🛑
+                break🔴
+            🛑
+            else if 🔧lines🚪i🙅⭕substr🔧j🤞 12⚙ 🤘🤘 💬CLEANUP CODE💬⚙ 🏁
+                🧵 sub 🤘 lines🚪i🙅⭕substr🔧j➕12🤞 lines🚪i🙅⭕length🔧⚙➖🔧j➕12⚙⚙🔴
+                🔁 🔧int k 🤘 0🔴 k 👈 sub⭕length🔧⚙🔴 ➕➕k⚙ 🏁
+                    if 🔧sub🚪k🙅 🤘🤘 👄💬👄⚙ 🏁
+                        🔁 🔧int l 🤘 k ➕ 1🔴 l 👈 sub⭕length🔧⚙🔴 ➕➕l⚙ 🏁
+                            if 🔧sub🚪l➖1🙅 🚫🤘 👄\\👄 🤙🤙 sub🚪l🙅 🤘🤘 👄💬👄⚙ 🏁
+                                cleanupCode 🤘 sub⭕substr🔧k ➕ 1🤞 l➖🔧k➕1⚙⚙🔴
+                                break🔴
+                            🛑
+                        🛑
+                    🛑
+                🛑
+                break🔴
+            🛑
+        🛑
+    🛑
+
+    vector👈🧵👉 be🔁eStatements 🤘 getStatements🔧be🔁e⚙🔴
+    vector👈🧵👉 afterStatements 🤘 getStatements🔧after⚙🔴
+
+    if 🔧be🔁eStatements⭕size🔧⚙ 🚫🤘 afterStatements⭕size🔧⚙⚙ 🏁
+        cout 👈👈 💬Error🤜 BEFORE and AFTER not the Same Length💬 👈👈 endl🔴
+        throw exception🔧⚙🔴
+    🛑
+
+    🔁 🔧int i 🤘 0🔴 i 👈 be🔁eStatements⭕size🔧⚙🔴 ➕➕i⚙ 🏁
+        cout 👈👈 💬BEFORE🤜 💬 👈👈 be🔁eStatements🚪i🙅 👈👈 endl🔴
+    🛑
+
+
+    🔁 🔧int i 🤘 0🔴 i 👈 afterStatements⭕size🔧⚙🔴 ➕➕i⚙ 🏁
+        cout 👈👈 💬AFTER🤜 💬 👈👈 afterStatements🚪i🙅 👈👈 endl🔴
+    🛑
+
+    cout 👈👈 💬Using Double Quotes🤜 💬 👈👈 useDoubleQuotes 👈👈 endl🔴
+    cout 👈👈 💬Using Single Quotes🤜 💬 👈👈 useSingleQuotes 👈👈 endl🔴
+    cout 👈👈 💬Ignore Unrecognized Statements🤜 💬 👈👈 ignoreUnrecognized 👈👈 endl🔴
+
+    if 🔧hasRunCommand⚙ 🏁
+        cout 👈👈 💬Run Command🤜 💬 👈👈 runCommand 👈👈 endl🔴
+    🛑
+
+    cout 👈👈 💬Setup Code🤜 💬 👈👈 setupCode 👈👈 endl🔴
+    cout 👈👈 💬Cleanup Code🤜 💬 👈👈 cleanupCode 👈👈 endl🔴
+
+    🧵 outputText 🤘 💬👀 👈stdlib⭕h👉\n👀 👈iostream👉\n👀 👈🧵👉\n👀 👈vector👉\n👀 \💬Transpiler⭕h\💬\n👇 😀 std🔴\nint main🔧int argc🤞 🔤✖️✖️ argv⚙🏁if 🔧argc 👈 4⚙ 🏁cout 👈👈 \💬Must Include to➗from and a input and output file\💬 👈👈 endl🔴 throw exception🔧⚙🔴🛑💬🔴
+    outputText ➕🤘 💬vector👈🧵👉 t 🤘 🏁💬🔴
+    🔁 🔧int i 🤘 0🔴 i 👈 be🔁eStatements⭕size🔧⚙🔴 ➕➕i⚙ 🏁
+        outputText ➕🤘 💬\💬💬 ➕ be🔁eStatements🚪i🙅 ➕ 💬\💬💬🔴
+        if 🔧i 🚫🤘 be🔁eStatements⭕size🔧⚙ ➖ 1⚙ 🏁
+            outputText ➕🤘 💬🤞💬🔴
+        🛑
+    🛑
+    outputText ➕🤘 💬🛑🔴💬🔴
+    outputText ➕🤘 💬vector👈🧵👉 c 🤘 🏁💬🔴
+    🔁 🔧int i 🤘 0🔴 i 👈 afterStatements⭕size🔧⚙🔴 ➕➕i⚙ 🏁
+        outputText ➕🤘 💬\💬💬 ➕ afterStatements🚪i🙅 ➕ 💬\💬💬🔴
+        if 🔧i 🚫🤘 afterStatements⭕size🔧⚙ ➖ 1⚙ 🏁
+            outputText ➕🤘 💬🤞💬🔴
+        🛑
+    🛑
+    outputText ➕🤘 💬🛑🔴💬🔴
+    outputText ➕🤘 💬Transpiler transpiler🔧t🤞 c🤞 💬🔴
+    if 🔧ignoreUnrecognized⚙ 🏁
+        outputText ➕🤘 💬true💬🔴
+    🛑
+    else 🏁
+        outputText ➕🤘 💬false💬🔴
+    🛑
+    outputText ➕🤘 💬🤞 \💬\💬🤞 💬🔴
+    if 🔧useDoubleQuotes⚙ 🏁
+        outputText ➕🤘 💬true🤞💬🔴
+    🛑
+    else 🏁
+        outputText ➕🤘 💬false🤞💬🔴
+    🛑
+    if 🔧useSingleQuotes⚙ 🏁
+        outputText ➕🤘 💬true💬🔴
+    🛑
+    else 🏁
+        outputText ➕🤘 💬false💬🔴
+    🛑
+    outputText ➕🤘 💬⚙🔴 🧵 final🔴💬🔴
+    outputText ➕🤘 💬if 🔧🧵🔧argv🚪1🙅⚙⭕substr🔧0🤞2⚙ 🤘🤘 \💬to\💬⚙ 🏁final 🤘 transpiler⭕transpileToFromFile🔧argv🚪2🙅⚙🔴🛑💬🔴
+    outputText ➕🤘 💬else if 🔧🧵🔧argv🚪1🙅⚙⭕substr🔧0🤞4⚙ 🤘🤘 \💬from\💬⚙ 🏁final 🤘 transpiler⭕transpileFromFromFile🔧argv🚪2🙅⚙🔴🛑💬🔴
+    outputText ➕🤘 💬🧵 setupCode 🤘 \💬💬🔴
+    outputText ➕🤘 setupCode🔴
+    outputText ➕🤘 💬\💬🔴💬🔴
+    outputText ➕🤘 💬🧵 cleanupCode 🤘 \💬💬🔴
+    outputText ➕🤘 cleanupCode🔴
+    outputText ➕🤘 💬\💬🔴💬🔴
+    outputText ➕🤘 💬ofstream myfile🔴myfile⭕open🔧argv🚪3🙅⚙🔴myfile👈👈setupCode🔴myfile👈👈final🔴myfile👈👈cleanupCode🔴myfile⭕close🔧⚙🔴🧵 finalFile 🤘 argv🚪3🙅🔴💬🔴
+    if 🔧hasRunCommand⚙ 🏁
+        🧵 finalRunCommand 🤘 💬💬🔴
+        🔁 🔧int i 🤘 0🔴 i 👈 runCommand⭕length🔧⚙🔴 ➕➕i⚙ 🏁
+            if 🔧runCommand⭕substr🔧i🤞 4⚙ 🤘🤘 💬FILE💬⚙ 🏁
+                finalRunCommand ➕🤘 💬\💬➕finalFile➕\💬💬🔴
+                i ➕🤘 3🔴
+                continue🔴
+            🛑
+            else 🏁
+                finalRunCommand ➕🤘 🧵🔧1🤞 runCommand🚪i🙅⚙🔴
+            🛑
+        🛑
+        int prev 🤘 0🔴
+        🔁 🔧int i 🤘 0🔴 i 👈🤘 finalRunCommand⭕length🔧⚙🔴 ➕➕i⚙ 🏁
+            if 🔧finalRunCommand🚪i🙅 🤘🤘 👄🔴👄 || i 🤘🤘 finalRunCommand⭕length🔧⚙⚙ 🏁
+                🧵 com 🤘 finalRunCommand⭕substr🔧prev🤞 i➖prev⚙🔴
+                outputText ➕🤘 💬🧵 com💬🔴
+                outputText ➕🤘 to_🧵🔧i⚙🔴
+                outputText ➕🤘 💬 🤘 \💬💬 ➕ com ➕ 💬\💬🔴💬🔴
+                outputText ➕🤘 💬system🔧🤙💬🔴
+                outputText ➕🤘 💬com💬🔴
+                outputText ➕🤘 to_🧵🔧i⚙🔴
+                outputText ➕🤘 💬🚪0🙅⚙🔴💬🔴
+                prev 🤘 i ➕ 1🔴
+                i➕➕🔴
+            🛑
+        🛑
+        
+    🛑
+    outputText ➕🤘 💬return 0🔴🛑💬🔴
+    ofstream myfile🔴
+    🧵 f 🤘 getTemporaryFile🔧⚙🔴
+    myfile⭕open🔧f⚙🔴
+    myfile 👈👈 outputText🔴
+    myfile⭕close🔧⚙🔴
+    myfile⭕open🔧💬Transpiler⭕cpp💬⚙🔴
+    myfile 👈👈 transpilerCppText🔴
+    myfile⭕close🔧⚙🔴
+    myfile⭕open🔧💬Transpiler⭕h💬⚙🔴
+    myfile 👈👈 transpilerHeaderText🔴
+    myfile⭕close🔧⚙🔴
+    🧵 command 🤘 💬g➕➕ 💬 ➕ f ➕ 💬 Transpiler⭕cpp ➖o \💬💬 ➕ title ➕ 💬\💬💬🔴
+    system🔧🤙command🚪0🙅⚙🔴
+    remove🔧🤙f🚪0🙅⚙🔴
+    remove🔧💬Transpiler⭕cpp💬⚙🔴
+    remove🔧💬Transpiler⭕h💬⚙🔴
+    return 0🔴
+🛑

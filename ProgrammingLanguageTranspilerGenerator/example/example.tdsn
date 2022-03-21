@@ -1,0 +1,14 @@
+ExampleName
+
+BEFORE: "a" "b" "c"
+AFTER: "int main(){\n" "std::cout<<\"Hello, World!\"<<std::endl;\nreturn 1;" "\n}"
+
+IGNORE UNRECOGNIZED STATEMENTS: YES
+
+USE DOUBLE QUOTES: YES
+USE SINGLE QUOTES: NO
+
+SETUP CODE: "#include<iostream>\n"
+CLEANUP CODE: "\n//This is an example!"
+
+RUN COMMAND: "g++ FILE -o example"
