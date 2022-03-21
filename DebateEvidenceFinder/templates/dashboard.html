@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="{{url_for('static', filename='js/dashboard.js')}}"></script>
+    {% if has_query %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/dashboard_yes_query.css')}}">
+    {% else %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/dashboard_no_query.css')}}">
+    {% endif %}
+    {% include "helper_templates/flash.html" %}
+</head>
+<body>
+    <div id="info-cover-wrapper">
+        <div id="account-info-cover" class="info-cover">
+            <span id="username">Welcome, {{username}}</span>
+            <br><br>
+            <a id="logout-anchor" href="{{url_for('logout')}}">Logout</a>
+        </div>
+        {% if has_query %}
+        <div id="website-info-cover" class="info-cover">
+            <span class="website-info">What is CardCollector?</span>
+            <span class="website-info">CardCollector is a website programmed by Adam Stone that scrapes the <a href="https://hsld.debatecoaches.org">LD Wiki</a> for cards inside of cases that debaters upload.</span>
+            <span class="website-info">Then, debaters can search the website to quickly and conveniently find already-cut evidence.</span>
+        </div>
+        {% endif %}
+    </div>
+    <div id="cover">
+        <form onSubmit="return runSearch();">
+            <div class="tb">
+            <div class="td"><input type="text" id="query" placeholder="{{placeholder}}"></div>
+            <div class="td" id="s-cover">
+                <button type="submit">
+                <div id="s-circle"></div>
+                <span></span>
+                </button>
+            </div>
+            </div>
+        </form>
+    </div>
+    <div id="links-cover">
+        {% for tup in cards %}
+        <details>
+        <summary><a class="card-link" href="/cards/{{tup[0]}}?query={{query}}">{{tup[1][1].get_tag()}}</a></summary>
+        <h6 class="citation">{{tup[1][1].citation}}</h6>
+        <h5 class="preview">{{tup[1][1].preview}}</h5>
+        </details>
+        <br>
+        {% endfor %}
+    </div>
+</body>
+</html>

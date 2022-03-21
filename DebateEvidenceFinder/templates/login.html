@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="{{url_for('static', filename='js/login.js')}}"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/login.css')}}">
+    {% include "helper_templates/flash.html" %}
+</head>
+<body>
+    <h1>Login Page</h1>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+    <div id="id01" class="modal">
+    
+    <form class="modal-content animate" method="POST" action="">
+        <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        {{ form.hidden_tag() }}
+
+        <div class="container">
+        <label for="eml"><b>Email</b></label>
+        {{ form.email }}
+
+        <label for="psw"><b>Password</b></label>
+        {{ form.password }}
+            
+        {{ form.submit }}
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw"><a href="/reset_password">Forgot password?</a></span>
+        </div>
+    </form>
+    </div>
+
+    <a href="{{url_for('register')}}">Don't have an account? Sign Up</a>
+</body>
+</html>

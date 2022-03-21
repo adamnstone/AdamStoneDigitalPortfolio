@@ -1,0 +1,7 @@
+DOWNLOADED_FILES_FOLDER = "downloaded_files"
+HELPER_FILES_FOLDER = "helper_files"
+OUTPUT_FILES_FOLDER = "output_files"
+LONG_STORAGE_FILES_FOLDER = "long_storage_files"
+CASE_COUNT_FILE = "case_count.txt"
+PYTHON_BACKEND_FOLDER = "python_backend"
+TEMPORARY_SEND_DOWNLOAD_FILES_FOLDER = "temporary_send_download_files"
