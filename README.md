@@ -40,3 +40,7 @@ My grandmother loves to play sudoku, but I though I could do better! I programme
 # 9] GoogleMeetAutomation
 
 I was fully virtual during my 8th grade year of school because of COVID. Because I didn't want to be late to my classes, I created a Python3 program using the library PyAutoGUI that automatically opens google chrome whenever it is time for class, types in the URL for Google Meet, enters the class code based on the time of day it is, and logs onto the meeting.
+
+# 10] JPGInject
+
+As I was researching different types of encoding for different impact formats (.jpg, .png, etc.), I learned that, in a JPG file, program ignore all text after a certain flag. Therefore, information can be stored there unbeknownst to users, and the image will still function well. So, it is possible to embed text, code, and even other JPGs in JPG files. I created a program using the Tkinter Python3 library for that lets users select a programming language and embed code in a JPG/run code from a JPG that has already been embeded with code. (Also, a "g++" (cpp compiler) must be installed if you plan to embed C++ in JPG files).
