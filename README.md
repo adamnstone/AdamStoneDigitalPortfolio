@@ -44,3 +44,7 @@ I was fully virtual during my 8th grade year of school because of COVID. Because
 # 10] JPGInject
 
 As I was researching different types of encoding for different impact formats (.jpg, .png, etc.), I learned that, in a JPG file, program ignore all text after a certain flag. Therefore, information can be stored there unbeknownst to users, and the image will still function well. So, it is possible to embed text, code, and even other JPGs in JPG files. I created a program using the Tkinter Python3 library for that lets users select a programming language and embed code in a JPG/run code from a JPG that has already been embeded with code. (Also, a "g++" (cpp compiler) must be installed if you plan to embed C++ in JPG files).
+
+# 11] NinjaCube
+
+Unlike my other Unity project, "ChessAI," this game was more focused on graphics, controls, and GUI rather than backend functionality. This is simply an indie game I created where you are playing as a little cube trying to collect coins and kill enemies. The tutorial is self-explanatory.
