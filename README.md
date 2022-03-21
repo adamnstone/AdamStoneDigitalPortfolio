@@ -35,4 +35,4 @@ My grandmother loves to play sudoku, but I though I could do better! I programme
 
 # 8] GoogleMeetAutomation
 
-I was fully virtual during my 8th grade year of school because of COVID. Because I didn't want to be late to my classes, I created a Python3 program using the library PyAutoGUI that automatically opens google chrome whenever it is time for class, types in the URL for google meet, enters the class code based on the time of day it is, and logs onto the meeting.
+I was fully virtual during my 8th grade year of school because of COVID. Because I didn't want to be late to my classes, I created a Python3 program using the library PyAutoGUI that automatically opens google chrome whenever it is time for class, types in the URL for Google Meet, enters the class code based on the time of day it is, and logs onto the meeting.
