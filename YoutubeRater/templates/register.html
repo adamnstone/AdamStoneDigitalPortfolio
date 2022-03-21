@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="{{url_for('static', filename='js/register.js')}}"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/register.css')}}">
+    {% include "helper_templates/flash.html" %}
+</head>
+<body>
+    <h1>Register</h1>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Register</button>
+
+    <div id="id01" class="modal">
+    
+    <form class="modal-content animate" method="POST" action="">
+        <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        {{ form.hidden_tag() }}
+
+        <div class="container">
+        <label for="psw"><b>Username</b></label>
+        {{ form.username }}
+
+        <label for="eml"><b>Email</b></label>
+        {{ form.email }}
+
+        <label for="psw"><b>Password</b></label>
+        {{ form.password }}
+
+        <label for="psw"><b>Confirm Password</b></label>
+        {{ form.confirm_password }}
+            
+        {{ form.submit }}
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+    </form>
+    </div>
+
+
+    <a href="{{url_for('login')}}">Already have an account? Log In</a>
+</body>
+</html>

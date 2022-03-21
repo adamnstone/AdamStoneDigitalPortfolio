@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script>
+        const username = "{{username}}";
+        const allChildrenSettings = {{ all_children_settings|tojson }};
+        const parentEmail = "{{parent_email}}";
+    </script>
+    <script src="{{url_for('static', filename='js/dashboard.js')}}"></script>
+</head>
+<body>
+    {% include "helper_templates/navbar.html" %}
+    <img src="{{url_for('static', filename='images/dashboard_top.png')}}">
+    <h1 id="welcome">Welcome, {{username}}!</h1>
+    <div id="all-settings">
+        <span id="add-child-span">Add Child</span>
+        <div id="new-child-form-wrapper">
+            <form name="newChild" onsubmit="return validateNewChildForm();" method="POST" action="">
+                <label for="child-name">Child's Name</label>
+                <div id = "child-name">
+                    <input name="fname" type="text" placeholder="Name">
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div id="current-children">
+        <ul id="current-children-list"></ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Google Account</title>
+    <script>
+        const childName = "{{child_name}}";
+    </script>
+    <script src="{{url_for('static', filename='js/add_child_google_account.js')}}"></script>
+</head>
+<body>
+    <form name="addChildGoogleAccountForm" method="" action="" onsubmit="return validateAddChildGoogleAccountForm();">
+        <input name="faccount" type="text" placeholder="childaccount@test.com">
+        <input type="submit" value="Submit">
+    </form>
+    <a href="/child_settings/{{child_name}}">Back</a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube Rater",
+    "version": "1.0.0",
+    "permissions": [
+        "http://192.168.86.77/*",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "YouTube Rater"
+    }
+}

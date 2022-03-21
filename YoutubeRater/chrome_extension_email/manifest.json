@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube Rater",
+    "version": "1.0.0",
+    "permissions": [
+        "http://192.168.86.77/*",
+        "tabs",
+        "activeTab",
+        "identity",
+        "identity.email"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*", "https://www.youtubekids.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    }
+}

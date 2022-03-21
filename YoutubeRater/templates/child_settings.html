@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Child</title>
+    <script>
+        const childName = "{{child_name}}";
+        const parentEmail = "{{parent_email}}";
+        const childGoogleAccounts = {{ child_google_accounts|tojson }}['accounts'];
+        const childSettings = {{ child_settings|tojson }};
+    </script>
+    <script src="{{url_for('static', filename='js/child_settings.js')}}"></script>
+</head>
+<body>
+    <h1>{{child_name}}'s Settings</h1>
+    <form name="childSettings" action="" onsubmit="return validateChildSettingsForm();" method="">
+        <input name="freportLevel" type="range" min="1" max="5" id="report-level">
+        <label for="report-level">Report Level</label>
+        <input name="fblockVideo" type="checkbox" id="block-video">
+        <label for="block-video">Block Video</label>
+        <input name="fwhenTranscript" type="checkbox" id="when-transcript">
+        <label for="when-transcript">Block/Report When Transcript Not Available</label>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="google-account">
+        <span id="current-google-accounts-span">Current Google Accounts:</span>
+        <ul id="current-google-accounts-list"></ul>
+        <label id="add-google-account-label">Add Google Account:</button>
+        <form name="addChildGoogleAccountForm" method="" action="" onsubmit="return validateAddChildGoogleAccountForm();">
+            <input name="faccount" type="text" placeholder="childaccount@test.com">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <button id="delete-child-button">Delete Child</button>
+    <a href="/dashboard">Back</a>
+</body>
+</html>
