@@ -10,7 +10,7 @@ on_output = 16
 input_button = Button(on_input)
 output = LED(on_output)
 machine_name = "Test Washing Machine 1"
-string_code = "0xfbce434ee3"
+string_code = "XXXXXXXXXXXX"
 
 
 def turn_on_machine(duration):
