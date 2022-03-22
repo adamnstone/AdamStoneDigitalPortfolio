@@ -13,6 +13,8 @@ I am not exceptional at chess, so I decided to create an AI that plays chess usi
 
 For the same laundromat chain as my "ReportingConsolidator" project, I needed to create a system that allows employees to turn on washing machines from their phones, tracks which washing machines that have been turned on by customers and employees and the number of activations, and provide a secure website where business owners can access this information. The API/Website is a Python3 program with a Flask framework that tracks incoming POST requests that carry data about which machines have been activated and by whom. It also hosts a website where this information is privately displayed. Next, in each washing machine, a RaspberryPi hosts an API on the local network (also using Python3 and Flask) that sends out signals to various GPIO ports (using the RPi.GPIO library) that turn on the washing machine. It also sends a signal to the overarching API that tracks activations. Lastly, I used Unity to create an android app that allows employees to turn on the machines. On the app, the employees can either scan a QR code (that corresponds to each RaspberryPi's local, public IP address) or type it in manually. Then, they can adjust several settings on the wash and click a button that sends an HTTP request to the RaspberryPi's local API, initiating the sequence I described previously. (For this project, I also blurred out sensitive information).
 
+Here is a link to a video demonstration of this project: https://drive.google.com/file/d/1n6fg-BSeNWjQV3yXyDuWa8qOCz46Z9AU/view?usp=sharing
+
 # 4] ProgrammingLanguageTranspilerGenerator
 
 I love creating esoteric programming languages, so I built a tool using C/C++ that creates programming languages out of user-specified parameters. First, the user creates a ".tdsn" file where they lay out parameters for their language (see "example/example.tdsn"). Then, the program generates an EXE file that acts as a transpiler for their languages (all user-defined programming languages compiled, not interpreted, because they transpile to C++ and are then compiled and run as an EXE). Next, the user can either:
@@ -52,3 +54,9 @@ As I was researching different types of encoding for different impact formats (.
 # 12] NinjaCube
 
 Unlike my other Unity project, "ChessAI," this game was more focused on graphics, controls, and GUI rather than backend functionality. This is simply an indie game I created where you are playing as a little cube trying to collect coins and kill enemies. The tutorial is self-explanatory.
+
+# 13] RobotArm
+
+As my final personal project in my Innovation & Design II class, I created a 3D printed robot arm controlled via Arduino and an Android app that communicates over Bluetooth. The app, built with MIT App Inventor, lets users connect to the robot arm, and they can then control where the robot moves, as well as open and close the grabber.
+
+Here is a link to a video demonstration of this project: https://drive.google.com/file/d/13n5guYjNXJcvuO59gaFe6DnuKAseFgSW/view?usp=sharing
