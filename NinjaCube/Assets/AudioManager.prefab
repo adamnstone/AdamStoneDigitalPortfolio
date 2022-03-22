@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3728092921703661054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3728092921703661048}
+  - component: {fileID: 3728092921703661049}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3728092921703661048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3728092921703661054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3728092921703661049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3728092921703661054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f2df0960eeab834e81036fe4e638d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: cc2da64f001c5424d949ea906dd157e3, type: 3}
+    volume: 0.5
+    pitch: 1.55
+    source: {fileID: 0}
+    loop: 1
+  - name: GameOver
+    clip: {fileID: 8300000, guid: 2cfc700bb3e94964bb962413c3ebd13e, type: 3}
+    volume: 0.5
+    pitch: 1.55
+    source: {fileID: 0}
+    loop: 0
+  - name: CoinCollect
+    clip: {fileID: 8300000, guid: 1e25443580325a649a520c8f96096d27, type: 3}
+    volume: 0.5
+    pitch: 1.55
+    source: {fileID: 0}
+    loop: 0
+  - name: ResetHighScore
+    clip: {fileID: 8300000, guid: 1e25443580325a649a520c8f96096d27, type: 3}
+    volume: 0.5
+    pitch: 1.55
+    source: {fileID: 0}
+    loop: 0
+  pitchIncrease: 0.01
