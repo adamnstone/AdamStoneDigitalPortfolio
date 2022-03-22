@@ -6,17 +6,17 @@ app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 #app.config["SERVER_NAME"] = "LaundromatAPI.com"
 
-url = "http://34.67.212.21/"
+url = "XXXXXXXXXXXX"
 
 secret_file_name = "secrets.txt"
 data_file_name = "data.txt"
 filekey_name = "filekey.txt"
 random_secret_characters = ["a", "b", "c", "d", "e", "f", "g", "H", "I", "J", "K", "L", "X", "z", "_", "-"]
 secret_length_range = 30, 50
-code = 0xfbce434ee3
-code_string = "0xfbce434ee3"
-master_key = 0x238746AFB
-master_key_string = "0x238746AFB"
+code = 'XXXXXXXXXXX' # usually a hexadecimal number, but must be in a string so that XXXXXXXX doesn't cause an error when blurred out
+code_string = "XXXXXXXXXXX"
+master_key = 'XXXXXXXXXXX' # usually a hexadecimal number, but must be in a string so that XXXXXXXX doesn't cause an error when blurred out
+master_key_string = "XXXXXXXXXXXXXxx"
 
 splitter = "/||-||/"
 
