@@ -3,11 +3,11 @@ This is Adam Stone's computer programming portfolio of my favorite projects that
 
 # 1] ReportingConsolidator
 
-A laundromat chain wanted to automate data collection and dispersal about sales and other statistics in their stores. Several emails would come through with different statistics in varying formats (from HTML to plan text to .rtf files, etc.), and employees would sift through the data, transfer select pieces of information into ZohoSheets, and send a summary email to the owners. This program also generates graphs that help analyze customer trends. Using Python 3, I created a program that automates all of these processes, and it is still running to help this business. (I have also changed all sensititve information into either environment variables or "XXXXXX" in the code for security purposes).
+A laundromat chain wanted to automate data collection and dispersal about sales and other statistics in their stores. Several emails would come through with different statistics in varying formats (from HTML to plan text to .rtf files, etc.) that come from all different systems (emails, websites, text/csv files, etc.), and employees would sift through the data, transfer select pieces of information into Zoho Sheets and Google Sheets, and send a summary email to the owners. This program also generates graphs that help analyze customer trends. Using Python 3, I created a program that automates all of these processes, and it is still running to help this business. Additionally, I learned how to authenticate and use multiple APIs (Zoho Sheets, Google Sheets, etc.), retrieve and send emails via SSL, graph with MatPlotLib, webscrape with BeautifulSoup, and much more. I originally ran the program on a Linux server at my home, but for security reasons with port-forwarding and risk of power outages, I decided to rent a VM (Virtual Machine) Linux Debian server from Google Cloud (console.cloud.google.com) and set up the program there. (I have also changed all sensititve information into "XXXXXX" in the code in this repo for security purposes).
 
 # 2] ChessAI
 
-I am not exceptional at chess, so I decided to create an AI that plays chess using C# and the Unity game engine. This program uses a minimax algorithm with alpha-beta pruning and varying fitness functions to play chess at a superhuman level.
+I am not exceptional at chess, so I decided to create an AI that plays chess using C# and the Unity game engine. This program uses a minimax algorithm with alpha-beta pruning and varying fitness functions, as well as recursion and back-tracing, to play chess at a superhuman level.
 
 # 3] LaundromatMachineSystem
 
@@ -39,23 +39,19 @@ With the massive success of the recent Wordle trend, I decided to program my own
 
 During COVID, we have all been bored out of our minds on Zoom meetings. Luckily, I created ZoomFaker, a program that lets you display a fake, looping video of yourself instead of your live camera feed on a Zoom meeting. For this program to run, you also need to install OBS studio. To use this program, you have to start running the Python 3 file (or compiled EXE). Then, open a Zoom meeting. Briefly turn off your video. Click the "b" key on your keyboard to begin recording yourself, and select the "OBS virtual camera" video input device. This lets you turn your camera on while recording. When you are done recording yourself, click "s" and the recording will automatically start playing instead of your camera feed. If you need to switch back (for example, if someone asks you a question on the meeting), you can simply change your video input device back to your computer's camera, then go back to the virtual camera to continue the recording. Also, clicking "f" toggles the flip-recording setting. If this setting is on, the video you recorded will play forward then backwards seamlessly, so that there is no cut when the recording ends. Lastly, pressing "p" starts the recording over from the beginning, and "r" deletes the current recording. (Also this projcet is not limited to Zoom - it will function on all virtual meeting platforms where you can change your video input source).
 
-# 9] SudokuSolver
-
-My grandmother loves to play sudoku, but I though I could do better! I programmed a SudokuSolver in C# that uses recursion and backtracing to find the solution to the puzzle. To enter the puzzle, type each line of the sudoku puzzle into the command line with "X" wherever there is an unknown number. Then it will print out the solution.
-
-# 10] GoogleMeetAutomation
+# 9] GoogleMeetAutomation
 
 I was fully virtual during my 8th grade year of school because of COVID. Because I didn't want to be late to my classes, I created a Python3 program using the library PyAutoGUI that automatically opens google chrome whenever it is time for class, types in the URL for Google Meet, enters the class code based on the time of day it is, and logs onto the meeting.
 
-# 11] JPGInject
+# 10] JPGInject
 
 As I was researching different types of encoding for different impact formats (.jpg, .png, etc.), I learned that, in a JPG file, program ignore all text after a certain flag. Therefore, information can be stored there unbeknownst to users, and the image will still function well. So, it is possible to embed text, code, and even other JPGs in JPG files. I created a program using the Tkinter Python3 library for that lets users select a programming language and embed code in a JPG/run code from a JPG that has already been embeded with code. (Also, a "g++" (cpp compiler) must be installed if you plan to embed C++ in JPG files).
 
-# 12] NinjaCube
+# 11] NinjaCube
 
 Unlike my other Unity project, "ChessAI," this game was more focused on graphics, controls, and GUI rather than backend functionality. This is simply an indie game I created where you are playing as a little cube trying to collect coins and kill enemies. The tutorial is self-explanatory.
 
-# 13] RobotArm
+# 12] RobotArm
 
 As my final personal project in my Innovation & Design II class, I created a 3D printed robot arm controlled via Arduino and an Android app that communicates over Bluetooth. The app, built with MIT App Inventor, lets users connect to the robot arm, and they can then control where the robot moves, as well as open and close the grabber.
 
