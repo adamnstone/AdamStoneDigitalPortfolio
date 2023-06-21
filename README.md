@@ -1,4 +1,4 @@
-# AdamStoneProgrammingPortfolio
+# AdamStoneDigitalPortfolio
 This is Adam Stone's digital portfolio.
 
 # 1] ReportingConsolidator
