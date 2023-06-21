@@ -1,4 +1,4 @@
-# AdamStoneDigitalPortfolio
+# Adam Stone Digital Portfolio
 This is Adam Stone's digital portfolio.
 
 # 1] ReportingConsolidator
