@@ -1,3 +1,7 @@
+theme: jekyll-theme-minimal
+title: Adam Stone's Digital Portfolio
+description: Digital Portfolio of Adam Stone's Creations!
+
 lsi: false
 safe: true
 source: ['/docs']
