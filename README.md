@@ -1,5 +1,5 @@
 # AdamStoneProgrammingPortfolio
-This is Adam Stone's computer programming portfolio of my favorite projects that I have created.
+This is Adam Stone's digital portfolio.
 
 # 1] ReportingConsolidator
 
